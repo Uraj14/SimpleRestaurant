@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/layout.css">
+    <script type="text/javascript" src="validate.js"></script>
+    <title>Cafe-Contact Us</title>
+    <style>
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="index.html"><img src="img/logo.png" alt="" style="height:20px width:20px" </a></h1>
+      
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./excit.html">Exciting Deals</a></li>
+        <li><a href="./reg.html">Reservations</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li><a href="./review.html">Reviews</a></li>
+        <li class="last"><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+
+<div class="wrapper row2">
+  <div id="container" class="clear">
+  <section id="slider1" class="clear">
+  <h2><center> Contact Us!</center> </h2>
+  </section>
+  <section id="slider1" class="clear">
+
+<h3>Contact Form</h3>
+
+<div class="container1">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+    <option value="-1" selected>select..</option>
+      <option value="australia">India</option>
+      <option value="canada">USA</option>
+      <option value="usa">UK</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">Japan</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  </section>
+  </div>
+</div>
+
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved -  <a href="./admin.php">Ujjawal Raj</a></p>
+  </footer>
+</div>
+
+</body>
+</html> 

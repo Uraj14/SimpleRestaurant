@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/layout.css">
+    <title>Exciting Deals</title>
+   
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+
+
+
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="index.html"><img src="img/logo.png" alt="" style="height:20px width:20px" </a></h1>
+      
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./excit.html">Exciting Deals</a></li>
+        <li><a href="./reg.html">Reservations</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li><a href="./review.html">Reviews</a></li>
+        <li class="last"><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider1" class="clear">
+      <figure>
+      <img class="mySlides" src="slide-one.jpg" style="width:100%">
+      <img class="mySlides" src="slide-two.jpg" style="width:100%">
+      <img class="mySlides" src="slide-three.jpg" style="width:100%">
+      </figure>
+    </section>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 7000); // Change image every 7 seconds
+  }
+  </script>
+
+
+
+
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved -  <a href="./admin.php">Ujjawal Raj</a></p>
+  </footer>
+</div>
+
+</body>
+</html> 
